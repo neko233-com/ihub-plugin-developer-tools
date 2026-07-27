@@ -3,7 +3,7 @@
   "schemaVersion": 1,
   "id": "ihub-plugin-developer-tools",
   "name": "Plugin Developer Tools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a standalone TypeScript/Vite iHub plugin project beneath a user-selected parent folder.",
   "author": "iHub",
   "license": "MIT",

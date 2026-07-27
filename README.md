@@ -34,9 +34,12 @@ context.developer.createProject({ grantId, pluginId })
 ## 开发与构建
 
 ```powershell
-pnpm --dir plugins/official/ihub-plugin-developer-tools run check
-pnpm --dir plugins/official/ihub-plugin-developer-tools run build
-pnpm --dir plugins/official/ihub-plugin-developer-tools run dev
+pnpm install
+pnpm run check
+pnpm run build
+pnpm run dev
 ```
+
+在独立克隆仓库的根目录运行上述命令；主仓中的检出目录也一样可直接运行。
 
 `dist/` 是 iHub 从 Git 导入时加载的前端产物。iHub 不会在导入、安装或启动此插件时执行 npm/pnpm 脚本；插件将自己的轻量 bridge 客户端随源码提供，因此单独克隆后也可构建。
