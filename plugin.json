@@ -1,0 +1,28 @@
+{
+  "$schema": "https://ihub.dev/schemas/plugin-manifest-v1.json",
+  "schemaVersion": 1,
+  "id": "ihub-plugin-developer-tools",
+  "name": "Plugin Developer Tools",
+  "version": "1.0.0",
+  "description": "Create a standalone TypeScript/Vite iHub plugin project beneath a user-selected parent folder.",
+  "author": "iHub",
+  "license": "MIT",
+  "repository": "https://github.com/neko233-com/ihub-plugin-developer-tools",
+  "engines": { "ihub": ">=0.1.0", "api": "^1.0.0" },
+  "entry": { "frontend": "dist/index.html" },
+  "activationEvents": ["onCommand:create-plugin-project"],
+  "contributes": {
+    "commands": [
+      {
+        "id": "create-plugin-project",
+        "title": "Create plugin project",
+        "subtitle": "Choose a parent folder, name the plugin, and create a safe starter",
+        "keywords": ["plugin", "template", "typescript", "vite", "developer", "create"]
+      }
+    ]
+  },
+  "permissions": {
+    "filesystem": { "read": ["user-selected"], "write": ["user-selected"] }
+  },
+  "update": { "channel": "stable", "autoUpdate": true }
+}

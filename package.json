@@ -1,0 +1,17 @@
+{
+  "name": "ihub-plugin-developer-tools",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A consent-first iHub plugin project creator.",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "check": "tsc --noEmit -p tsconfig.json",
+    "build": "pnpm run check && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vite": "^8.1.5"
+  }
+}
